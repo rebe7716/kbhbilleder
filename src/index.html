@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Starter Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="tailwind.css" />
+  </head>
+  <body class="p-4">
+    <!-- FØRSTE SEKTION  -->
+    <section class="grid pb-4 md:pb-16">
+      <h1
+        class="place-self-center pb-3 pt-5 text-2xl md:pt-16 md:pb-5 md:text-4xl"
+      >
+        københavnerbilleder
+      </h1>
+      <h3 class="place-self-center pb-8 md:pb-5">en bog af sten simons.</h3>
+    </section>
+
+    <section class="flex grid justify-center">
+      <img
+        src="/src/pic/kbhfrontbillede.png"
+        alt="frontbillede"
+        class="place-self-center"
+      />
+
+      <div class="mt-8 w-96 place-self-center border-2 p-5 md:mt-32">
+        <h3>
+          københavnerbilleder - en guide til hipster foto. produceret af mellem
+          linjerne. antal sider: 344
+          <br />
+          <br />
+          <b class="flex justify-center">399,-</b>
+        </h3>
+      </div>
+
+      <button class="mt-10 place-self-center border-2 p-2 hover:text-[#010BEB]">
+        køb den her
+      </button>
+    </section>
+
+    <!-- <section
+    class="flex grid justify-center md:grid md:grid-cols-2 md:grid-rows-2 md:pt-16"
+  >
+    <img
+      src="/src/pic/kbhfrontbillede.png"
+      alt="frontbillede"
+      class="place-self-center md:col-start-1 md:row-span-2 md:pr-10"
+    />
+
+    <div class="mt-8 w-96 place-self-center border-2 p-5 md:max-w-md">
+      <h3>
+        en bog af sten simons.
+        <br />
+        produceret af mellem linjerne.
+        <br />
+        <br />
+        <b class="flex justify-center">399,-</b>
+      </h3>
+    </div>
+
+    <button
+      class="md: mt-6 place-self-center border-2 p-2 hover:text-[#010BEB]"
+    >
+      køb den her
+    </button>
+  </section> -->
+
+    <!-- ANDEN SEKTION 3 BILLEDER -->
+
+    <section
+      class="grid md:ml-10 md:mr-10 md:grid-cols-6 md:grid-rows-1 md:gap-6 md:pt-32"
+    >
+      <img
+        class="place-self-center pb-14 pt-32 md:col-span-2 md:col-start-1 md:row-span-1 md:pb-0 md:pt-0"
+        src="/src/pic/kbhfrontbillede.png"
+        alt="hej"
+      />
+      <img
+        class="place-self-center pb-14 md:col-span-2 md:col-start-3 md:row-span-1 md:pb-0"
+        src="/src/pic/kobenhavnerbilleder_aaben_venstre.jpg"
+        alt="hej"
+      />
+      <img
+        class="place-self-center pb-4 md:col-span-2 md:col-start-5 md:row-span-1 md:pb-0"
+        src="/src/pic/kobenhavnerbilleder_oppefra.jpg"
+        alt="hej"
+      />
+    </section>
+
+    <!-- TREDJE SEKTION KAPITLERNE -->
+
+    <section class="grid">
+      <div class="place-self-center">
+        <h1 class="pt-32 pb-10 text-2xl md:pt-48 md:text-3xl">kapitlerne.</h1>
+      </div>
+    </section>
+
+    <section
+      class="grid border-2 p-3 md:mr-10 md:ml-10 md:grid md:grid-cols-2 md:gap-11 md:p-10 lg:mr-36 lg:ml-36 lg:gap-16 lg:p-24"
+    >
+      <div class="place-self-center">
+        <div>
+          <h2 class="pb-2 font-bold">kapitel 1. intro til street foto</h2>
+          <p>
+            Hvad er street foto? Det handler i bund og grund om at skyde byens
+            liv og byens geometri (urban geometry). I dette kapitel får du en
+            grundig intro til hvad street foto er og et overblik over nogen af
+            de kendte street-fotografer. Alt krydret med en masse gode eksempler
+            på street fotos.
+          </p>
+        </div>
+
+        <div class="pt-7">
+          <h2 class="pb-2 font-bold">kapitel 2. om at skyde street</h2>
+          <p>
+            vil du skyde street? så er der ikke nogen vej udenom: du skal ud på
+            gaderne og prøve det! I dette kapitel får du en teknisk indføring i
+            hvordan du bedst skyder street. Uanset om du er begynder eller
+            professionel, er der mange gode tekniske tips og tricks til
+            street-skyderiet.
+          </p>
+        </div>
+
+        <div class="pt-7">
+          <h2 class="pb-2 font-bold">kapitel 3. om at finde det rette motiv</h2>
+          <p>
+            Indimellem er man heldig, andre gange kommer man hjem helt uden gode
+            motiver. Med et par tips og tricks til at finde de rette motiver,
+            stiger chancen gevaldigt for at fange de gode motiver.
+          </p>
+        </div>
+
+        <div class="pt-7">
+          <h2 class="pb-2 font-bold">kapitel 4. digital street foto</h2>
+          <p>
+            De fleste af os skyder oftest digitalt fordi det er billigere og
+            nemmere. Og nogen teknikker og fremgangsmåder egner sig kun til
+            digital street foto. I dette kapitel får du en række tips og tricks
+            til digital street-foto.
+          </p>
+        </div>
+      </div>
+
+      <div class="place-self-center">
+        <div class="pt-7 md:pt-0">
+          <h2 class="pb-2 font-bold">kapitel 5. analog street foto</h2>
+          <p>
+            Analog er sejt fordi det er mere “ægte,” dyrere og mere besværligt
+            end digital. Det signalerer entusiasme. Nogle teknikker og
+            fremgangsmåder egner sig bedst til analog street foto. I dette
+            kapitel får du en række tips og tricks til analog street-foto
+          </p>
+        </div>
+
+        <div class="pt-7">
+          <h2 class="pb-2 font-bold">kapitel 6. om at skyde sort/hvid</h2>
+          <p>
+            Alle street-fotografer skyder sort/hvid nu og da. Nogen altid.
+            Hvorfor? Hvad er der specielt ved sort/hvid fotografering, og hvad
+            adskiller sort/hvid fra farvefotografering? Her får du en række tips
+            og tricks til sort/hvid fotografering.
+          </p>
+        </div>
+
+        <div class="pt-7">
+          <h2 class="pb-2 font-bold">kapitel 7. kreative teknikker</h2>
+          <p>
+            Dobbelteksponeringer, ICM (intentional camera moves), smadrede
+            objektiver, gamle filmruller og alle mulige andre, spændende
+            kreative teknikker kan løfte dine fotografier fra at være kedelige
+            dokumentationer af hverdagen til at blive vilde kunststykker. Så dyk
+            ned i dette kapitel om eksperimenterende teknikker!
+          </p>
+        </div>
+
+        <div class="pt-7">
+          <h2 class="pb-2 font-bold">kapitel 8. kom helt tæt på!</h2>
+          <p>
+            Street foto handler om at fotografere livet på gaden - men tør du at
+            gå helt tæt på fremmede mennesker og knipse løs? Du kan lige så godt
+            øve dig, for det er det der vil gøre dig til en bedre
+            street-fotograf…
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FJERDE SEKTION BILLEDER -->
+    <section class="grid pt-40 pb-28">
+      <h1 class="place-self-center text-2xl md:text-3xl">
+        billeder fra bogen.
+      </h1>
+    </section>
+
+    <section class="grid md:pl-10 md:pr-10">
+      <div
+        class="place-self-center md:grid md:grid-cols-3 md:grid-rows-3 md:gap-7"
+      >
+        <img
+          class="pb-4"
+          src="/src/pic/nikkormat-ft2-remiseparken-2.jpg"
+          alt=""
+        />
+        <img
+          class="pb-4"
+          src="/src/pic/agfa-genanvendeligt-kamera-35mm-11.jpg"
+          alt=""
+        />
+        <img
+          class="pb-4"
+          src="/src/pic/amarminoen-med-et-agfa-le-box-11.jpg"
+          alt=""
+        />
+        <img
+          class="pb-4"
+          src="/src/pic/amarminoen-med-et-agfa-le-box-3.jpg"
+          alt=""
+        />
+        <img class="pb-4" src="/src/pic/0008.jpg" alt="" />
+        <img
+          class="pb-4"
+          src="/src/pic/foraar-med-et-agfa-le-box-2021-17.jpg"
+          alt=""
+        />
+        <img class="pb-4" src="/src/pic/lomo-smena-17.jpg" alt="" />
+        <img
+          class="pb-4"
+          src="/src/pic/agfa-genanvendeligt-kamera-35mm-5.jpg"
+          alt=""
+        />
+        <img class="pb-4" src="/src/pic/lomo-smena-20.jpg" alt="" />
+      </div>
+    </section>
+
+    <!-- SIDSTE SEKTION FORFATTER -->
+    <section class="grid pt-40">
+      <h1 class="place-self-center pb-10 text-2xl md:pb-16 md:text-3xl">
+        forfatteren
+      </h1>
+    </section>
+
+    <section class="grid pb-28 lg:grid lg:grid-cols-2">
+      <div class="grid">
+        <img
+          src="/src/pic/sten_simons.jpg"
+          alt="hej"
+          class="h-[600px] place-self-center lg:h-[600px]"
+        />
+      </div>
+
+      <div class="grid">
+        <p class="ml-0 mt-14 mb-10 place-self-center pt-2 md:m-10 lg:mr-14">
+          sten simons har en lang foto-karriere bag sig. det hele startede i
+          00’erne, da han gik rundt i pisserenden for at fotografere ungdommens
+          forfald.
+          <br />
+          <br />
+          det ledte til en række udstillinger, og blev senere til hans først
+          fotobog “ungdomsdruk - pinlige billeder fra nattelivet.” derefter tog
+          karrieren fart: han blev fotojournalist og dokumenterede en masse
+          dagligdagsstof fra amager på dagbladet “amagerkaneren.”
+          <br />
+          <br />
+          sideløbende begyndte han at undervise i foto, og har skrevet et utal
+          af bøger, herunder bestsellerne "scener fra s-toget", "brun mad - en
+          visuel odysse", og lærebogen "fotografering for evnesvage".
+        </p>
+
+        <button class="m-3 place-self-center border-2 p-2 hover:text-[#010BEB]">
+          køb bogen her.
+        </button>
+      </div>
+    </section>
+
+    <footer class="grid border-t-2">
+      <section class="mt-10 mb-10 flex justify-evenly">
+        <h1 class="hover:text-[#010BEB]">@mellemlinjerne</h1>
+        <h1 class="hover:text-[#010BEB]">@stensimons</h1>
+      </section>
+    </footer>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
